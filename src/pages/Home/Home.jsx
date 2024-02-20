@@ -8,7 +8,7 @@ import { CiMenuFries } from "react-icons/ci";
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import './home.css'
 function Home() {
-  
+
   return (
     <div>
       <section className="landing-pg">
@@ -17,7 +17,7 @@ function Home() {
             <Col lg={12}>
               <div className="landing-header-sec">
                 <a href="#" className="btn1" data-bs-toggle="modal" data-bs-target="#signModal">
-                  Sign Up
+                 Ahtisham
                 </a>
                 <Dropdown>
 
