@@ -1,6 +1,6 @@
 import React from "react";
 import { FaUser } from "react-icons/fa6";
-import landinglogo from '../../assets/images/landing-logo.png'
+import landinglogo from '../../assets/Images/landing-logo.png'
 import { Container, Row, Col,Dropdown } from "react-bootstrap";
 import './home.css'
 import { Link } from "react-router-dom";

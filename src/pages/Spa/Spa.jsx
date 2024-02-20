@@ -1,8 +1,8 @@
 import React from "react";
-import spaCard1 from "../../assets/images/spa-card2.svg";
-import spaCard2 from "../../assets/images/spa-card1.svg";
-import spaCard3 from "../../assets/images/spa-card3.svg";
-import disc3 from "../../assets/images/discount3.png";
+import spaCard1 from "../../assets/Images/spa-card2.svg";
+import spaCard2 from "../../assets/Images/spa-card1.svg";
+import spaCard3 from "../../assets/Images/spa-card3.svg";
+import disc3 from "../../assets/Images/discount3.png";
 import { HiArrowLongRight } from "react-icons/hi2";
 
 import "./Spa.css";
