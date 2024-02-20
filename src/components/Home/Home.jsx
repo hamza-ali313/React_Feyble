@@ -1,8 +1,9 @@
 import React from "react";
 import { FaUser } from "react-icons/fa6";
-import landinglogo from '../../assets/landing-logo.png'
+import landinglogo from '../../assets/images/landing-logo.png'
 import { Container, Row, Col,Dropdown } from "react-bootstrap";
 import './home.css'
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div>
@@ -43,7 +44,7 @@ function Home() {
                     <a href="studio.php">Studio</a>
                   </li>
                   <li>
-                    <a href="spa.php">Spa</a>
+                    <Link to={"/spa"}>Spa</Link>
                   </li>
                 </ul>
                 <div>
