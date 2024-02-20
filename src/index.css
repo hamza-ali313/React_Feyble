@@ -1,6 +1,14 @@
+
+@font-face {
+    font-family: "Michelia";
+    src: url(./assets/fonts/Michelia.otf);
+}
+
 ul li {
     list-style: none;
 }
+
+
 
 body {
     overflow-x: hidden;
@@ -11,8 +19,9 @@ a {
     text-decoration: none !important;
 }
 
+
 h1 {
-    font-size: 55px!important;
+    font-size: 55px;
     color: #E2A239;
     font-family: "Michelia";
     text-transform: uppercase;
@@ -67,6 +76,7 @@ a.btn8 {
 
 .btn8:hover {
     transform: scale(1.02);
+    font-weight: 500;
 }
 
 .btn1 {
@@ -254,3 +264,4 @@ a.btn4 {
 }
 
 /* only container responsive  */
+
