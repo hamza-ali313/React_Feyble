@@ -1,0 +1,125 @@
+/* landing pg start  */
+
+
+@font-face {
+  font-family: "Copperplate-Gothic";
+  src: url(../../assets/fonts/Copperplate-Gothic-Bold-Regular.ttf);
+}
+
+.landing-header-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+button.sidenavbtn {
+  background: none;
+  border: none;
+  transform: rotate(180deg);
+  font-size: 53px;
+  color: #E2A239;
+}
+
+
+.landing-main ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+  border-top: 3px solid #e2a239;
+  width: 55%;
+  margin: 40px 0 60px 0;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown button {
+  background: transparent;
+  color: #e2a239;
+  font-size: 23px;
+  border: unset;
+}
+
+.dropdown button:hover {
+  background-color: unset !important;
+}
+
+.dropdown button:active {
+  background-color: unset !important;
+}
+
+.landing-main ul li a {
+  color: #e2a239;
+  font-size: 90px;
+  text-transform: capitalize;
+  font-family: "Michelia";
+  position: relative;
+  text-decoration: none;
+}
+
+.landing-main {
+  text-align: center;
+  padding: 60px 0 30px 0;
+}
+
+.dropdown-menu {
+  background: #2b383e !important;
+  border: 1px solid #e2a239 !important;
+}
+
+.dropdown-menu a {
+  color: #e2a239;
+  display: block;
+  list-style-type: none;
+  padding: 10px 15px;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  text-align: right;
+  text-transform: capitalize;
+  font-family: "Copperplate-Gothic";
+}
+
+.dropdown-menu a:hover {
+  background-color: unset !important;
+  color: #e2a239 !important;
+}
+
+.landing-main ul li:not(:last-child) a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 80px;
+  background: #e2a239;
+}
+
+.landing-main a.btn2 {
+  display: inline-block;
+  border: 3px solid;
+  border-radius: 7px;
+  transition: .5s;
+}
+
+.landing-main a.btn2:hover {
+  transform: scale(1.02);
+}
+
+.landing-main img {
+  width: 460px;
+  display: inline-block;
+}
+
+section.landing-pg {
+  background: #2b383e;
+  padding: 0px 0 100px 0;
+}
+
+
+/* landing pg end  */

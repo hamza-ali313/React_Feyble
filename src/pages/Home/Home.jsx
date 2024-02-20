@@ -1,7 +1,9 @@
 import React from "react";
 import { FaUser } from "react-icons/fa6";
-import landinglogo from '../../assets/landing-logo.png'
-import { Container, Row, Col,Dropdown } from "react-bootstrap";
+import { CiMenuFries } from "react-icons/ci";
+import landinglogo from '../../assets/Images/landing-logo.png'
+
+import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import './home.css'
 function Home() {
   return (
@@ -15,8 +17,8 @@ function Home() {
                   Sign In
                 </a>
                 <Dropdown>
-                  <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    Dropdown Button
+                  <Dropdown.Toggle  id="dropdown-basic">
+                    <CiMenuFries />
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
@@ -29,7 +31,7 @@ function Home() {
                     <Dropdown.Item href="#/action-3">Contact</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-           
+
               </div>
               <div className="landing-main">
                 <div>
@@ -47,7 +49,7 @@ function Home() {
                   </li>
                 </ul>
                 <div>
-                  <a href="members.php" className="btn8">Join The Club</a>
+                  <a href="members.php" className="btn1">Join The Club</a>
                 </div>
               </div>
             </Col>
