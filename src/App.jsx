@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from 'react-bootstrap';
 import { Routes, Route } from "react-router-dom"
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import AOS from 'aos';
@@ -16,9 +16,6 @@ function App() {
 
   return (
     <>
-      <header>
-        <Header />
-      </header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
