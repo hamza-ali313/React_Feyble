@@ -16,7 +16,7 @@ function Home() {
             <Col lg={12}>
               <div className="landing-header-sec">
                 <a href="#" className="btn1" data-bs-toggle="modal" data-bs-target="#signModal">
-                  Sign Up
+                  Hamza ali
                 </a>
                 <Dropdown>
 
