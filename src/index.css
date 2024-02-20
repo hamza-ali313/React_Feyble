@@ -4,6 +4,23 @@
     src: url(./assets/fonts/Michelia.otf);
 }
 
+<<<<<<< Updated upstream
+=======
+
+@font-face {
+    font-family: "DunbarLow-Light";
+    src: url(../../assets/fonts/DunbarLow-Light.ttf);
+}
+
+
+@font-face {
+    font-family: "LeMondeLivre-SemiBold";
+    src: url(./assets/fonts/LeMondeLivre-SemiBold.otf);
+}
+
+
+
+>>>>>>> Stashed changes
 ul li {
     list-style: none;
 }

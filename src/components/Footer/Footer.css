@@ -1,9 +1,6 @@
 /* footer css start */
 
-@font-face {
-    font-family: "DunbarLow-Light";
-    src: url(../../assets/fonts/DunbarLow-Light.ttf);
-}
+
 
 .foot-social-links ul {
     display: inline-flex;
