@@ -4,7 +4,7 @@ import { FaUser } from "react-icons/fa6";
 import landinglogo from '../../assets/Images/landing-logo.png'
 import { Link } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
-import landinglogo from '../../assets/Images/landing-logo.png'
+// import landinglogo from '../../assets/Images/landing-logo.png'
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import './home.css'
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
             <Col lg={12}>
               <div className="landing-header-sec">
                 <a href="#" className="btn1" data-bs-toggle="modal" data-bs-target="#signModal">
-                  Sign In
+                  Sign Up
                 </a>
                 <Dropdown>
 
