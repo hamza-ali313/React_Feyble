@@ -1,0 +1,75 @@
+/* our_story_sec start start */
+
+@font-face {
+    font-family: "Copperplate-Gothic";
+    src: url(../../assets/fonts/Copperplate-Gothic-Bold-Regular.ttf);
+}
+
+.py-50 {
+    padding: 50px 0;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.menu_ {
+    padding: 50px 0 0;
+    background: #2b383e;
+}
+
+.menu_ h1 {
+    letter-spacing: 0;
+    text-transform: capitalize;
+    font-size: 70px;
+    color: #FFF;
+}
+
+.os2_img img {
+    width: 93%;
+    border: 2px solid #e2983c;
+    padding: 10px 10px;
+}
+.menu_ h2 {
+    letter-spacing: 0;
+    text-transform: capitalize;
+    font-size: 55px;
+    color: #FFF;
+    font-family: "Michelia";
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.menu_ h1 span {
+    color: #e2a239;
+    font-size: 35px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 2.4);
+}
+
+.menu_ p {
+    color: #e2a239;
+    font-size: 25px;
+    line-height: 33px;
+    font-weight: 400;
+}
+
+.right_p {
+    text-align: right;
+    padding-left: 70px;
+}
+
+.left_p {
+    padding-right: 70px;
+}
+
+
+.siteUp_ .our_story {
+    padding-bottom: 30px;
+}
+
+/* our_story_sec end */

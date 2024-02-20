@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Button } from 'react-bootstrap';
 import { Routes, Route } from "react-router-dom"
 import Home from './pages/Home/Home';
-import About from './components/About';
+import About from './pages/About/About.jsx';
 import Contact from './components/Contact';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -19,8 +19,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       <Footer/>

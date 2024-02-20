@@ -1,6 +1,24 @@
+@font-face {
+    font-family: "Michelia";
+    src: url(./assets/fonts/Michelia.otf);
+}
+
+
+
+
+
 
 ul li {
     list-style: none;
+}
+
+h1 {
+    font-size: 55px;
+    color: #E2A239;
+    font-family: "Michelia";
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-weight: 500;
 }
 
 .btn1 {
@@ -14,9 +32,9 @@ ul li {
     border: 2px solid;
     padding: 0px 33px;
     text-decoration: none;
-  }
-  
-  .btn1:before {
+}
+
+.btn1:before {
     content: '';
     position: absolute;
     top: -1px;
@@ -27,9 +45,9 @@ ul li {
     width: 116px;
     height: 3px;
     transition: 0.5s;
-  }
-  
-  .btn1:after {
+}
+
+.btn1:after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -40,17 +58,17 @@ ul li {
     width: 116px;
     height: 4px;
     transition: 0.5s;
-  }
-  
-  .btn1:hover:before {
+}
+
+.btn1:hover:before {
     width: 0;
-  }
-  
-  .btn1:hover:after {
+}
+
+.btn1:hover:after {
     width: 0;
-  }
-  
-  a.btn2 {
+}
+
+a.btn2 {
     text-transform: capitalize;
     color: #e2a239;
     font-size: 26px;
@@ -61,13 +79,13 @@ ul li {
     border: 2px solid;
     padding: 10px 50px;
     transition: .5s;
-  }
-  
-  .btn2:hover {
+}
+
+.btn2:hover {
     transform: scale(1.02);
-  }
-  
-  a.btn3 {
+}
+
+a.btn3 {
     text-transform: capitalize;
     background-image: url(../images/btn-bg.png);
     background-size: cover;
@@ -80,13 +98,13 @@ ul li {
     color: #e2a239;
     font-family: 'Roboto';
     transition: .5s;
-  }
-  
-  .btn3:hover {
+}
+
+.btn3:hover {
     transform: scale(1.02);
-  }
-  
-  a.btn4 {
+}
+
+a.btn4 {
     text-transform: capitalize;
     padding: 10px 30px;
     background-repeat: no-repeat;
@@ -98,13 +116,13 @@ ul li {
     font-weight: 500;
     font-size: 14px;
     transition: .5s;
-  }
-  
-  .btn4:hover {
+}
+
+.btn4:hover {
     transform: scale(1.02);
-  }
-  
-  .btn5 {
+}
+
+.btn5 {
     border-radius: 7px;
     color: #fff;
     padding: 12px 40px;
@@ -114,9 +132,8 @@ ul li {
     text-transform: capitalize;
     font-size: 13px;
     transition: .5s;
-  }
-  
-  .btn5:hover {
+}
+
+.btn5:hover {
     transform: scale(1.02);
-  }
-  
+}
