@@ -4,8 +4,6 @@
     src: url(./assets/fonts/Michelia.otf);
 }
 
-<<<<<<< Updated upstream
-=======
 
 @font-face {
     font-family: "DunbarLow-Light";
@@ -20,12 +18,9 @@
 
 
 
->>>>>>> Stashed changes
 ul li {
     list-style: none;
 }
-
-
 
 body {
     overflow-x: hidden;
