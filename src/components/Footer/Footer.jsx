@@ -1,118 +1,101 @@
-import React from 'react'
-import './Footer.css'
-
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
-    return (
-        <footer>
-            <div>
-                <div class="upper-foot">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10">
-                            <div class="row align-items-start">
-                                <div class="col-12 col-lg-3 col-md-6 col-sm-6">
-                                    <div class="foot-side">
-                                        <h5>
-                                            COMPANY LINKS
-                                        </h5>
-                                        <ul>
-                                            <li>
-                                                <a href="">About Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    Membership
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    Help Center
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    Policy &amp; Privacy
-                                                </a>
-
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    Contact
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6">
-                                    <div class="foot-social-links">
-                                        <div>
-                                            <p>
-                                                Enjoy our seasonal menu and experience the beauty of aesthetics
-                                            </p>
-                                        </div>
-                                        <ul>
-                                            <li>
-                                                <a href="javacript:;">
-                                                    <i class="fa-brands fa-facebook-f"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javacript:;">
-                                                    <i class="fa-brands fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javacript:;">
-                                                    <i class="fa-brands fa-youtube"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-3 col-md-6 col-sm-6">
-                                    <div class="foot-side">
-                                        <h5>
-                                            CATEGORIES
-                                        </h5>
-                                        <ul>
-                                            <li>
-                                                <a href="">
-                                                    menu
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="cate-food">
-                                                    food
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="cate-drink">
-                                                    drinks
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  return (
+    <footer>
+      <div>
+        <div className="upper-foot">
+          <div className="row justify-content-center">
+            <div className="col-md-10">
+              <div className="row align-items-start">
+                <div className="col-12 col-lg-3 col-md-6 col-sm-6">
+                  <div className="foot-side">
+                    <h5>COMPANY LINKS</h5>
+                    <ul>
+                      <li>
+                        <a href>About Us</a>
+                      </li>
+                      <li>
+                        <a href>Membership</a>
+                      </li>
+                      <li>
+                        <a href>Help Center</a>
+                      </li>
+                      <li>
+                        <a href>Policy &amp; Privacy</a>
+                      </li>
+                      <li>
+                        <a href>Contact</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </div>
-            <div class="Copyrights-sec">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-lg-12">
-                            <div class="Copyrights-main">
-                                <p>Copyright © 2023. All right reserved</p>
-                            </div>
-                        </div>
+                <div className="col-12 col-lg-6">
+                  <div className="foot-social-links">
+                    <div>
+                      <p>
+                        Enjoy our seasonal menu and experience the beauty of
+                        aesthetics
+                      </p>
                     </div>
+                    <ul>
+                      <li>
+                        <a href="javacript:;">
+                          <i className="fa-brands fa-facebook-f" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javacript:;">
+                          <i className="fa-brands fa-twitter" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javacript:;">
+                          <i className="fa-brands fa-youtube" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <div className="col-12 col-lg-3 col-md-6 col-sm-6">
+                  <div className="foot-side">
+                    <h5>CATEGORIES</h5>
+                    <ul>
+                      <li>
+                        <a href>menu</a>
+                      </li>
+                      <li>
+                        <a href className="cate-food">
+                          food
+                        </a>
+                      </li>
+                      <li>
+                        <a href className="cate-drink">
+                          drinks
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-        </footer>
-    )
-}
+          </div>
+        </div>
+      </div>
+      <div className="Copyrights-sec">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-lg-12">
+              <div className="Copyrights-main">
+                <p>Copyright © 2023. All right reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

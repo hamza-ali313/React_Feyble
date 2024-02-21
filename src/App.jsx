@@ -1,15 +1,17 @@
-import { useState, useEffect } from 'react'
-import { Button } from 'react-bootstrap';
+import { useState, useEffect } from "react";
+import { Button } from "react-bootstrap";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Home from './pages/Home/Home';
-import About from './pages/About/About.jsx';
-import Spa from "./pages/Spa/Spa";  
-import Contact from './components/Contact';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { motion } from "framer-motion"
-import Header from './components/Header';
-import Footer from './components/Footer/Footer';
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About.jsx";
+import Spa from "./pages/Spa/Spa";
+import Contact from "./components/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { motion } from "framer-motion";
+import Header from "./components/Header";
+import Footer from "./components/Footer/Footer";
+import Studio from "./pages/Studio/Studio.jsx";
+import Cafe from "./pages/Cafe/Cafe.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -30,9 +32,10 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="spa" element={<Spa />} />
+        <Route path="studio" element={<Studio />} />
+        <Route path="cafe" element={<Cafe />} />
       </Routes>
       <Footer />
-
     </>
   );
 }
