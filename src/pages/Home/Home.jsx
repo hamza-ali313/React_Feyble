@@ -29,13 +29,27 @@ function Home() {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1">About Us</Dropdown.Item>
-                    <Dropdown.Item href="#/action-2">Community</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Members</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Merch</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Host Event</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Site Map</Dropdown.Item>
-                    <Dropdown.Item href="#/action-3">Contact</Dropdown.Item>
+                    <Dropdown.Item className="p-0">
+                      <Link to="about">About Us</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item className="p-0">
+                      <Link to="comunity">Community</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item className="p-0">
+                      <Link to="member">Members</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item className="p-0">
+                      <Link to="merch">Merch</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item className="p-0">
+                      <Link to="host_event">Host Event</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item className="p-0">
+                      <Link to="site_map">Site Map</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item className="p-0">
+                      <Link to="contact">Contact</Link>
+                    </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </div>

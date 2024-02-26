@@ -14,19 +14,19 @@ const Footer = () => {
                     <h5>COMPANY LINKS</h5>
                     <ul>
                       <li>
-                        <a href>About Us</a>
+                        <a >About Us</a>
                       </li>
                       <li>
-                        <a href>Membership</a>
+                        <a >Membership</a>
                       </li>
                       <li>
-                        <a href>Help Center</a>
+                        <a >Help Center</a>
                       </li>
                       <li>
-                        <a href>Policy &amp; Privacy</a>
+                        <a >Policy &amp; Privacy</a>
                       </li>
                       <li>
-                        <a href>Contact</a>
+                        <a >Contact</a>
                       </li>
                     </ul>
                   </div>
@@ -63,15 +63,15 @@ const Footer = () => {
                     <h5>CATEGORIES</h5>
                     <ul>
                       <li>
-                        <a href>menu</a>
+                        <a >menu</a>
                       </li>
                       <li>
-                        <a href className="cate-food">
+                        <a  className="cate-food">
                           food
                         </a>
                       </li>
                       <li>
-                        <a href className="cate-drink">
+                        <a  className="cate-drink">
                           drinks
                         </a>
                       </li>
