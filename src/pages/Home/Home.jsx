@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaUser } from "react-icons/fa6";
 
 import landinglogo from "../../assets/Images/landing-logo.png";
@@ -8,6 +8,9 @@ import { CiMenuFries } from "react-icons/ci";
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import "./home.css";
 function Home() {
+  // did update
+
+
   return (
     <div>
       <section className="landing-pg">
@@ -59,7 +62,9 @@ function Home() {
                 </div>
                 <ul>
                   <li>
-                    <Link to={"/cafe"}>Cafe</Link>
+                    <Link  to={"/cafe"}>
+                      Cafe
+                    </Link>
                   </li>
                   <li>
                     <Link to={"/studio"}>Studio</Link>

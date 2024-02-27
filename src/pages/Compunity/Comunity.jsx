@@ -1,7 +1,13 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import comu1 from "../../assets/Images/video-play-icon.png";
 import comuSli1 from "../../assets/Images/comunity-ob1.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart, faCommentDots } from "@fortawesome/free-solid-svg-icons";
 import "./Comunity.css";
+import { Link } from "react-router-dom";
 const Comunity = () => {
   return (
     <>
@@ -28,22 +34,24 @@ const Comunity = () => {
                   <div className="col-12 mt-4">
                     <h1>Newsletters</h1>
                     <div className="my-4">
-                      <div className="site_map">
+                      <Slider
+                        slidesToShow={3}
+                        swipeToSlide={true}
+                        focusOnSelect={true}
+                        arrows={true}
+                        className="site_map"
+                      >
                         <div className="div1">
                           <div className="div1_img">
-                            <img
-                              src={comuSli1}
-                              alt
-                              className="img-fluid ob_img"
-                            />
+                            <img src={comuSli1} className="img-fluid ob_img" />
                             <div>
                               <span>
-                                <i className="fa-regular fa-comment-dots" />
+                                <FontAwesomeIcon icon={faCommentDots} />
                               </span>
                               <span className="heart_check">
                                 <input type="checkbox" id="heart" />
                                 <label htmlFor="heart">
-                                  <i className="fa-solid fa-heart" />
+                                  <FontAwesomeIcon icon={faHeart} />
                                 </label>
                               </span>
                             </div>
@@ -58,19 +66,15 @@ const Comunity = () => {
                         </div>
                         <div className="div1">
                           <div className="div1_img">
-                            <img
-                              src={comuSli1}
-                              alt
-                              className="img-fluid ob_img"
-                            />
+                            <img src={comuSli1} className="img-fluid ob_img" />
                             <div>
                               <span>
-                                <i className="fa-regular fa-comment-dots" />
+                                <FontAwesomeIcon icon={faCommentDots} />
                               </span>
                               <span className="heart_check">
                                 <input type="checkbox" id="heart1" />
                                 <label htmlFor="heart1">
-                                  <i className="fa-solid fa-heart" />
+                                  <FontAwesomeIcon icon={faHeart} />
                                 </label>
                               </span>
                             </div>
@@ -85,19 +89,15 @@ const Comunity = () => {
                         </div>
                         <div className="div1">
                           <div className="div1_img">
-                            <img
-                              src={comuSli1}
-                              alt
-                              className="img-fluid ob_img"
-                            />
+                            <img src={comuSli1} className="img-fluid ob_img" />
                             <div>
                               <span>
-                                <i className="fa-regular fa-comment-dots" />
+                                <FontAwesomeIcon icon={faCommentDots} />
                               </span>
                               <span className="heart_check">
                                 <input type="checkbox" id="heart2" />
                                 <label htmlFor="heart2">
-                                  <i className="fa-solid fa-heart" />
+                                  <FontAwesomeIcon icon={faHeart} />
                                 </label>
                               </span>
                             </div>
@@ -112,19 +112,15 @@ const Comunity = () => {
                         </div>
                         <div className="div1">
                           <div className="div1_img">
-                            <img
-                              src={comuSli1}
-                              alt
-                              className="img-fluid ob_img"
-                            />
+                            <img src={comuSli1} className="img-fluid ob_img" />
                             <div>
                               <span>
-                                <i className="fa-regular fa-comment-dots" />
+                                <FontAwesomeIcon icon={faCommentDots} />
                               </span>
                               <span className="heart_check">
                                 <input type="checkbox" id="heart3" />
                                 <label htmlFor="heart3">
-                                  <i className="fa-solid fa-heart" />
+                                  <FontAwesomeIcon icon={faHeart} />
                                 </label>
                               </span>
                             </div>
@@ -139,19 +135,15 @@ const Comunity = () => {
                         </div>
                         <div className="div1">
                           <div className="div1_img">
-                            <img
-                              src={comuSli1}
-                              alt
-                              className="img-fluid ob_img"
-                            />
+                            <img src={comuSli1} className="img-fluid ob_img" />
                             <div>
                               <span>
-                                <i className="fa-regular fa-comment-dots" />
+                                <FontAwesomeIcon icon={faCommentDots} />
                               </span>
                               <span className="heart_check">
                                 <input type="checkbox" id="heart4" />
                                 <label htmlFor="heart4">
-                                  <i className="fa-solid fa-heart" />
+                                  <FontAwesomeIcon icon={faHeart} />
                                 </label>
                               </span>
                             </div>
@@ -166,19 +158,15 @@ const Comunity = () => {
                         </div>
                         <div className="div1">
                           <div className="div1_img">
-                            <img
-                              src={comuSli1}
-                              alt
-                              className="img-fluid ob_img"
-                            />
+                            <img src={comuSli1} className="img-fluid ob_img" />
                             <div>
                               <span>
-                                <i className="fa-regular fa-comment-dots" />
+                                <FontAwesomeIcon icon={faCommentDots} />
                               </span>
                               <span className="heart_check">
                                 <input type="checkbox" id="heart5" />
                                 <label htmlFor="heart5">
-                                  <i className="fa-solid fa-heart" />
+                                  <FontAwesomeIcon icon={faHeart} />
                                 </label>
                               </span>
                             </div>
@@ -191,7 +179,7 @@ const Comunity = () => {
                             </p>
                           </div>
                         </div>
-                      </div>
+                      </Slider>
                     </div>
                   </div>
                 </div>
@@ -208,19 +196,15 @@ const Comunity = () => {
                   <div className="site_map">
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart" />
                             <label htmlFor="heart">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -235,19 +219,15 @@ const Comunity = () => {
                     </div>
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart1" />
                             <label htmlFor="heart1">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -262,19 +242,15 @@ const Comunity = () => {
                     </div>
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart2" />
                             <label htmlFor="heart2">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -289,19 +265,15 @@ const Comunity = () => {
                     </div>
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart3" />
                             <label htmlFor="heart3">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -316,19 +288,15 @@ const Comunity = () => {
                     </div>
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart4" />
                             <label htmlFor="heart4">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -343,19 +311,15 @@ const Comunity = () => {
                     </div>
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart5" />
                             <label htmlFor="heart5">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -383,19 +347,15 @@ const Comunity = () => {
                   <div className="site_map">
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart" />
                             <label htmlFor="heart">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -410,19 +370,15 @@ const Comunity = () => {
                     </div>
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart1" />
                             <label htmlFor="heart1">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -437,19 +393,15 @@ const Comunity = () => {
                     </div>
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart2" />
                             <label htmlFor="heart2">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -464,19 +416,15 @@ const Comunity = () => {
                     </div>
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart3" />
                             <label htmlFor="heart3">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -491,19 +439,15 @@ const Comunity = () => {
                     </div>
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart4" />
                             <label htmlFor="heart4">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -518,19 +462,15 @@ const Comunity = () => {
                     </div>
                     <div className="div1">
                       <div className="div1_img">
-                        <img
-                          src={comuSli1}
-                          alt
-                          className="img-fluid ob_img"
-                        />
+                        <img src={comuSli1} className="img-fluid ob_img" />
                         <div>
                           <span>
-                            <i className="fa-regular fa-comment-dots" />
+                            <FontAwesomeIcon icon={faCommentDots} />
                           </span>
                           <span className="heart_check">
                             <input type="checkbox" id="heart5" />
                             <label htmlFor="heart5">
-                              <i className="fa-solid fa-heart" />
+                              <FontAwesomeIcon icon={faHeart} />
                             </label>
                           </span>
                         </div>
@@ -563,9 +503,9 @@ const Comunity = () => {
                         exercit
                       </p>
                       <div>
-                        <a href="members.php" className="btn8">
+                        <Link to="members" className="btn8">
                           Join The Club
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -578,9 +518,9 @@ const Comunity = () => {
                         exercit
                       </p>
                       <div>
-                        <a href="merchandise.php" className="btn8">
+                        <Link to="merch" className="btn8">
                           Merchandise
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

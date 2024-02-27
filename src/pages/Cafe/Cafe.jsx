@@ -1,7 +1,28 @@
-import React from "react";
-import "./Cafe.css"
+import Reac, { useEffect, useState } from "react";
+import "./Cafe.css";
 import cafePg from "../../assets/Images/cafe-pg.svg";
 const Cafe = () => {
+  // will unamount
+  // useEffect(() => {
+  //   return () => alert("hello world");
+  //   // console.log('hello world')
+  // }, []);
+
+  // did mount
+  // useEffect(() => {
+  //   return () => alert("hello world");
+  //   console.log("hello world");
+  // }, []);
+
+  const [click, setClick] = useState(false);
+
+  useEffect(() => {
+    if (click) {
+      alert("hello world");
+    }
+    // console.log("hello world");
+  }, [click]);
+
   return (
     <>
       <section className="cafe-pg">
@@ -22,7 +43,13 @@ const Cafe = () => {
                         </a>
                       </div>
                       <div>
-                        <a href="javascript:;" className="btn2">
+                        <a
+                          onClick={() => {
+                            setClick(true);
+                          }}
+                          href="javascript:;"
+                          className="btn2"
+                        >
                           Download PDF
                         </a>
                       </div>
@@ -52,10 +79,7 @@ const Cafe = () => {
                         <i className="fa-solid fa-plus" />
                       </div>
                       <div className="with-plus">
-                        <a
-                          href
-                          type="button"
-                        >
+                        <a href type="button">
                           <h2>
                             LOAF
                             <span>GF</span>
@@ -64,20 +88,14 @@ const Cafe = () => {
                         </a>
                         <i className="fa-solid fa-plus" />
                       </div>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>
                           PARFAIT
                           <span>GF, VG</span>
                         </h2>
                         <h6>Muffin Pastry, with Seasonal Fruit</h6>
                       </a>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>
                           TOAST
                           <span>VG</span>
@@ -89,64 +107,43 @@ const Cafe = () => {
                   <div className="div-desh" />
                   <div className="col-12">
                     <div className="cafe-col">
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>
                           Vegatables
                           <span>V</span>
                         </h2>
                         <h6>Muffin Pastry, with Seasonal Fruit</h6>
                       </a>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>
                           Cabbage
                           <span>GF, V</span>
                         </h2>
                         <h6>Muffin Pastry, with Seasonal Fruit</h6>
                       </a>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>
                           Mushroom
                           <span>GF, VG</span>
                         </h2>
                         <h6>Muffin Pastry, with Seasonal Fruit</h6>
                       </a>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>
                           Broccoli
                           <span>GF, V</span>
                         </h2>
                         <h6>Muffin Pastry, with Seasonal Fruit</h6>
                       </a>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>Salmon</h2>
                         <h6>Tomato, Egg, Chili Oil, Scallion Bing</h6>
                       </a>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>Chicken</h2>
                         <h6>Tomato, Egg, Chili Oil, Scallion Bing</h6>
                       </a>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>Bing</h2>
                         <h6>Tomato, Egg, Chili Oil, Scallion Bing</h6>
                       </a>
@@ -155,20 +152,14 @@ const Cafe = () => {
                   <div className="col-12 col-lg-8">
                     <div className="cafe-col">
                       <h1 className="mb-4">CONGEE</h1>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>Mother &amp; The Wolf</h2>
                         <h6>
                           Chicken Congee, Egg, Radish, Fried Shallots, Green
                           Onions, XO Sauce, Pork Floss, White Pepper, Youtiao
                         </h6>
                       </a>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>
                           Owl &amp; The Grasshopper
                           <span>GF, VG</span>
@@ -178,10 +169,7 @@ const Cafe = () => {
                           Onions, XO Sauce, Pork Floss, White Pepper, Youtiao
                         </h6>
                       </a>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>
                           North Wind &amp; The Sun
                           <span>GF</span>
@@ -191,10 +179,7 @@ const Cafe = () => {
                           Onions, XO Sauce, Pork Floss, White Pepper, Youtiao
                         </h6>
                       </a>
-                      <a
-                        href
-                        type="button"
-                      >
+                      <a href type="button">
                         <h2>
                           The Goose &amp; The Golden Egg
                           <span>GF</span>
