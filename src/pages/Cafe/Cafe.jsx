@@ -23,6 +23,91 @@ const Cafe = () => {
     // console.log("hello world");
   }, [click]);
 
+
+  const data1 = [
+    {
+      heading: "MOCHI",
+      head: "GF, VG",
+      desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
+    },
+    {
+      heading: "MOCHI",
+      head: "GF, VG",
+      desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
+    },
+    {
+      heading: "MOCHI",
+      head: "GF, VG",
+      desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
+    },
+    {
+      heading: "MOCHI",
+      head: "GF, VG",
+      desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
+    },
+  ];
+
+  const data3 = [
+    {
+      heading: "Mother & The Wolf",
+      head: "GF, VG",
+      desc: "CHICKEN CONGEE, EGG, RADISH, FRIED SHALLOTS, GREEN ONIONS, XO SAUCE, PORK FLOSS, WHITE PEPPER, YOUTIAO",
+    },
+    {
+      heading: "Owl & The Grasshopper",
+      head: "GF",
+      desc: "CHICKEN CONGEE, EGG, RADISH, FRIED SHALLOTS, GREEN ONIONS, XO SAUCE, PORK FLOSS, WHITE PEPPER, YOUTIAO",
+    },
+    {
+      heading: "North Wind & The Sun",
+      head: "GF, VG",
+      desc: "CHICKEN CONGEE, EGG, RADISH, FRIED SHALLOTS, GREEN ONIONS, XO SAUCE, PORK FLOSS, WHITE PEPPER, YOUTIAO",
+    },
+    {
+      heading: "The Goose & The Golden Egg",
+      head: "GF",
+      desc: "CHICKEN CONGEE, EGG, RADISH, FRIED SHALLOTS, GREEN ONIONS, XO SAUCE, PORK FLOSS, WHITE PEPPER, YOUTIAO",
+    },
+  ];
+
+  const data2 = [
+    {
+      heading: "Vegatables",
+      head: "GF, VG",
+      desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
+    },
+    {
+      heading: "Cabbage",
+      head: "GF, VG",
+      desc: "TOMATO, EGG, CHILI OIL, SCALLION BING",
+    },
+    {
+      heading: "Mushroom",
+      head: "",
+      desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
+    },
+    {
+      heading: "Broccoli",
+      head: "GF, VG",
+      desc: "TOMATO, EGG, CHILI OIL, SCALLION BING",
+    },
+    {
+      heading: "Salmon",
+      head: "GF, VG",
+      desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
+    },
+    {
+      heading: "Chicken",
+      head: "",
+      desc: "TOMATO, EGG, CHILI OIL, SCALLION BING",
+    },
+    {
+      heading: "Bing",
+      head: "GF, VG",
+      desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
+    },
+  ]
+
   return (
     <>
       <section className="cafe-pg">
@@ -62,46 +147,25 @@ const Cafe = () => {
                   <div className="col-12">
                     <div className="cafe-col">
                       <h1>yum cha</h1>
-                      <div className="with-plus">
-                        <a
-                          href
-                          type="button"
-                          className
-                          data-bs-toggle="modal"
-                          data-bs-target="#exampleModal"
-                        >
-                          <h2>
-                            MOCHI
-                            <span>GF, VG</span>
-                          </h2>
-                          <h6>Muffin Pastry, with Seasonal Fruit</h6>
-                        </a>
-                        <i className="fa-solid fa-plus" />
-                      </div>
-                      <div className="with-plus">
-                        <a href type="button">
-                          <h2>
-                            LOAF
-                            <span>GF</span>
-                          </h2>
-                          <h6>Muffin Pastry, with Seasonal Fruit</h6>
-                        </a>
-                        <i className="fa-solid fa-plus" />
-                      </div>
-                      <a href type="button">
-                        <h2>
-                          PARFAIT
-                          <span>GF, VG</span>
-                        </h2>
-                        <h6>Muffin Pastry, with Seasonal Fruit</h6>
-                      </a>
-                      <a href type="button">
-                        <h2>
-                          TOAST
-                          <span>VG</span>
-                        </h2>
-                        <h6>Muffin Pastry, with Seasonal Fruit</h6>
-                      </a>
+                      {data1.map(item => (
+                        <div className="with-plus">
+                          <a
+                            href="#"
+                            type="button"
+                            className="btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                          >
+                            <h2>
+                              {item.heading} 
+                              <span>{item.head}</span>
+                            </h2>
+                            <h6>{item.desc}</h6>
+                          </a>
+                          <i className="fa-solid fa-plus" />
+                        </div>
+                      ))}
+
                     </div>
                   </div>
                   <div className="div-desh" />
@@ -143,10 +207,7 @@ const Cafe = () => {
                         <h2>Chicken</h2>
                         <h6>Tomato, Egg, Chili Oil, Scallion Bing</h6>
                       </a>
-                      <a href type="button">
-                        <h2>Bing</h2>
-                        <h6>Tomato, Egg, Chili Oil, Scallion Bing</h6>
-                      </a>
+                    
                     </div>
                   </div>
                   <div className="col-12 col-lg-8">
