@@ -2,10 +2,8 @@ import React from "react";
 import spaCard1 from "../../assets/Images/spa-card2.svg";
 import spaCard2 from "../../assets/Images/spa-card1.svg";
 import spaCard3 from "../../assets/Images/spa-card3.svg";
-import disc3 from "../../assets/Images/discount3.png";
-import { HiArrowLongRight } from "react-icons/hi2";
-
 import "./Spa.css";
+import BecomeResi from "../../components/Become_A_Resi/Become_A_Resi";
 
 const Spa = () => {
   return (
@@ -19,7 +17,7 @@ const Spa = () => {
           </div>
           <div className="row justify-content-center">
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12 pb-4 pb-lg-0">
-              <div className="spa-card">
+              <div className={"spa-card"}>
                 <h2>Contrast Therapy</h2>
                 <img className="img-fluid" src={spaCard1} alt />
                 <div className="spa-card-hover">
@@ -106,7 +104,9 @@ const Spa = () => {
         </div>
       </section>
 
-      <section className="get-discounts">
+      <BecomeResi />
+
+      {/* <section className="get-discounts">
         <div className="container-fluid p-0">
           <div className="row ">
             <div className="col-12 col-lg-6 pe-0">
@@ -162,7 +162,7 @@ const Spa = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
