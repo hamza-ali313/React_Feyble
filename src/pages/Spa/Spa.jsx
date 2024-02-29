@@ -6,6 +6,30 @@ import "./Spa.css";
 import BecomeResi from "../../components/Become_A_Resi/Become_A_Resi";
 
 const Spa = () => {
+  const data = [
+    {
+      id: 1,
+      img: spaCard1,
+      heading: "Contrast Therapy",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      btn: "Book Now",
+    },
+    {
+      id: 2,
+      img: spaCard2,
+      heading: "Sound Therapy",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      btn: "Book Now",
+    },
+    {
+      id: 3,
+      img: spaCard3,
+      heading: "Practitioners",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      btn: "Book Now",
+    },
+  ]
+
   return (
     <>
       <section className="spa-pg">
@@ -16,69 +40,28 @@ const Spa = () => {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12 pb-4 pb-lg-0">
-              <div className={"spa-card"}>
-                <h2>Contrast Therapy</h2>
-                <img className="img-fluid" src={spaCard1} alt />
-                <div className="spa-card-hover">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <a
-                    href
-                    className="btn8"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    Book Now
-                  </a>
+            {data.map(item => (
+              <div key={item.id} className="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12 pb-4 pb-lg-0">
+                <div className={"spa-card"}>
+                  <h2>{item.heading}</h2>
+                  <img className="img-fluid" src={item.img} alt />
+                  <div className="spa-card-hover">
+                    <p>
+                      {item.desc}
+                    </p>
+                    <a
+                      href
+                      className="btn8"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                     {item.btn}
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12 pb-4 pb-lg-0">
-              <div className="spa-card">
-                <h2>Sound Therapy</h2>
-                <img className="img-fluid" src={spaCard2} alt />
-                <div className="spa-card-hover">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <a
-                    href
-                    className="btn8"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-12 pb-0 pb-lg-0">
-              <div className="spa-card">
-                <h2>Practitioners</h2>
-                <img className="img-fluid" src={spaCard3} alt />
-                <div className="spa-card-hover">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                  <a
-                    href
-                    className="btn8"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
+            ))}
+
           </div>
         </div>
       </section>
@@ -106,63 +89,6 @@ const Spa = () => {
 
       <BecomeResi />
 
-      {/* <section className="get-discounts">
-        <div className="container-fluid p-0">
-          <div className="row ">
-            <div className="col-12 col-lg-6 pe-0">
-              <div className="discount3-img">
-                <img className="img-fluid" src={disc3} alt />
-              </div>
-            </div>
-            <div className="col-12 col-lg-6 ps-0">
-              <div className="discount-txt discount-txt3">
-                <h4>
-                  <a href="members.php">
-                    Become A Resident
-                    <h4 class="icon">
-                      <HiArrowLongRight  />
-                    </h4>
-                  </a>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cupiditate sequi iusto natus ipsa cumque? Iure ratione harum
-                  unde quos id.
-                </p>
-                <ul>
-                  <li>
-                    <i className="fa-light fa-heart" />
-                    <div>
-                      <h6>lorem ipsum dolor</h6>
-                      <p>
-                        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet{" "}
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <i className="fa-light fa-star" />
-                    <div>
-                      <h6>lorem ipsum dolor</h6>
-                      <p>
-                        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet{" "}
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <i className="fa-light fa-user" />
-                    <div>
-                      <h6>lorem ipsum dolor</h6>
-                      <p>
-                        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet{" "}
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </>
   );
 };

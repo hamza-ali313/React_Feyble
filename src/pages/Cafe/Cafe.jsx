@@ -26,21 +26,25 @@ const Cafe = () => {
 
   const data1 = [
     {
+      id:1,
       heading: "MOCHI",
       head: "GF, VG",
       desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
     },
     {
+      id:2,
       heading: "MOCHI",
       head: "GF, VG",
       desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
     },
     {
+      id:3,
       heading: "MOCHI",
       head: "GF, VG",
       desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
     },
     {
+      id:4,
       heading: "MOCHI",
       head: "GF, VG",
       desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
@@ -49,21 +53,25 @@ const Cafe = () => {
 
   const data3 = [
     {
+      id:1,
       heading: "Mother & The Wolf",
       head: "GF, VG",
       desc: "CHICKEN CONGEE, EGG, RADISH, FRIED SHALLOTS, GREEN ONIONS, XO SAUCE, PORK FLOSS, WHITE PEPPER, YOUTIAO",
     },
     {
+      id:2,
       heading: "Owl & The Grasshopper",
       head: "GF",
       desc: "CHICKEN CONGEE, EGG, RADISH, FRIED SHALLOTS, GREEN ONIONS, XO SAUCE, PORK FLOSS, WHITE PEPPER, YOUTIAO",
     },
     {
+      id:3,
       heading: "North Wind & The Sun",
       head: "GF, VG",
       desc: "CHICKEN CONGEE, EGG, RADISH, FRIED SHALLOTS, GREEN ONIONS, XO SAUCE, PORK FLOSS, WHITE PEPPER, YOUTIAO",
     },
     {
+      id:4,
       heading: "The Goose & The Golden Egg",
       head: "GF",
       desc: "CHICKEN CONGEE, EGG, RADISH, FRIED SHALLOTS, GREEN ONIONS, XO SAUCE, PORK FLOSS, WHITE PEPPER, YOUTIAO",
@@ -72,36 +80,43 @@ const Cafe = () => {
 
   const data2 = [
     {
+      id:1,
       heading: "Vegatables",
       head: "GF, VG",
       desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
     },
     {
+      id:2,
       heading: "Cabbage",
       head: "GF, VG",
       desc: "TOMATO, EGG, CHILI OIL, SCALLION BING",
     },
     {
+      id:3,
       heading: "Mushroom",
       head: "",
       desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
     },
     {
+      id:4,
       heading: "Broccoli",
       head: "GF, VG",
       desc: "TOMATO, EGG, CHILI OIL, SCALLION BING",
     },
     {
+      id:5,
       heading: "Salmon",
       head: "GF, VG",
       desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
     },
     {
+      id:6,
       heading: "Chicken",
       head: "",
       desc: "TOMATO, EGG, CHILI OIL, SCALLION BING",
     },
     {
+      id:7,
       heading: "Bing",
       head: "GF, VG",
       desc: "MUFFIN PASTRY, WITH SEASONAL FRUIT",
@@ -148,7 +163,7 @@ const Cafe = () => {
                     <div className="cafe-col">
                       <h1>yum cha</h1>
                       {data1.map(item => (
-                        <div className="with-plus">
+                        <div key={item.id} className="with-plus">
                           <a
                             href="#"
                             type="button"
@@ -171,15 +186,8 @@ const Cafe = () => {
                   <div className="div-desh" />
                   <div className="col-12">
                     <div className="cafe-col">
-                      <a href type="button">
-                        <h2>
-                          Vegatables
-                          <span>V</span>
-                        </h2>
-                        <h6>Muffin Pastry, with Seasonal Fruit</h6>
-                      </a>
                       {data2.map(item => (
-                        <a href type="button">
+                        <a key={item.id} href type="button">
                           <h2>
                             {item.heading}
                             <span> {item.head}</span>
@@ -192,9 +200,8 @@ const Cafe = () => {
                   <div className="col-12 col-lg-8">
                     <div className="cafe-col">
                       <h1 className="mb-4">CONGEE</h1>
-
                       {data3.map(item => (
-                        <a href type="button">
+                        <a key={item.id} href type="button">
                           <h2>{item.heading}
                             <span> {item.head}</span>
                           </h2>

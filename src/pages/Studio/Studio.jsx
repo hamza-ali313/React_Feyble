@@ -11,24 +11,28 @@ const Studio = () => {
 
   const data = [
     {
+      id: 1,
       img: std1,
       heading: "Move",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       btn: "Book Now",
     },
     {
+      id: 2,
       img: std2,
       heading: "Capture",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       btn: "Book Now",
     },
     {
+      id: 3,
       img: std3,
       heading: "Speak",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       btn: "Book Now",
     },
     {
+      id: 4,
       img: std4,
       heading: "Reflect",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -52,7 +56,7 @@ const Studio = () => {
             <div className="col-lg-7">
               <div className="row flex-wrap">
                 {data.map(item => (
-                  <div className="col-12 col-sm-6 mb-4">
+                  <div key={item.id} className="col-12 col-sm-6 mb-4">
                     <div className="spa-card">
                       <img className="img-fluid" src={item.img} alt="" />
                       <div className="yellow-tap">
