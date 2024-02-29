@@ -157,7 +157,7 @@ const Cafe = () => {
                             data-bs-target="#exampleModal"
                           >
                             <h2>
-                              {item.heading} 
+                              {item.heading}
                               <span>{item.head}</span>
                             </h2>
                             <h6>{item.desc}</h6>
@@ -178,78 +178,31 @@ const Cafe = () => {
                         </h2>
                         <h6>Muffin Pastry, with Seasonal Fruit</h6>
                       </a>
-                      <a href type="button">
-                        <h2>
-                          Cabbage
-                          <span>GF, V</span>
-                        </h2>
-                        <h6>Muffin Pastry, with Seasonal Fruit</h6>
-                      </a>
-                      <a href type="button">
-                        <h2>
-                          Mushroom
-                          <span>GF, VG</span>
-                        </h2>
-                        <h6>Muffin Pastry, with Seasonal Fruit</h6>
-                      </a>
-                      <a href type="button">
-                        <h2>
-                          Broccoli
-                          <span>GF, V</span>
-                        </h2>
-                        <h6>Muffin Pastry, with Seasonal Fruit</h6>
-                      </a>
-                      <a href type="button">
-                        <h2>Salmon</h2>
-                        <h6>Tomato, Egg, Chili Oil, Scallion Bing</h6>
-                      </a>
-                      <a href type="button">
-                        <h2>Chicken</h2>
-                        <h6>Tomato, Egg, Chili Oil, Scallion Bing</h6>
-                      </a>
-                    
+                      {data2.map(item => (
+                        <a href type="button">
+                          <h2>
+                            {item.heading}
+                            <span> {item.head}</span>
+                          </h2>
+                          <h6>  {item.desc}</h6>
+                        </a>
+                      ))}
                     </div>
                   </div>
                   <div className="col-12 col-lg-8">
                     <div className="cafe-col">
                       <h1 className="mb-4">CONGEE</h1>
-                      <a href type="button">
-                        <h2>Mother &amp; The Wolf</h2>
-                        <h6>
-                          Chicken Congee, Egg, Radish, Fried Shallots, Green
-                          Onions, XO Sauce, Pork Floss, White Pepper, Youtiao
-                        </h6>
-                      </a>
-                      <a href type="button">
-                        <h2>
-                          Owl &amp; The Grasshopper
-                          <span>GF, VG</span>
-                        </h2>
-                        <h6>
-                          Chicken Congee, Egg, Radish, Fried Shallots, Green
-                          Onions, XO Sauce, Pork Floss, White Pepper, Youtiao
-                        </h6>
-                      </a>
-                      <a href type="button">
-                        <h2>
-                          North Wind &amp; The Sun
-                          <span>GF</span>
-                        </h2>
-                        <h6>
-                          Chicken Congee, Egg, Radish, Fried Shallots, Green
-                          Onions, XO Sauce, Pork Floss, White Pepper, Youtiao
-                        </h6>
-                      </a>
-                      <a href type="button">
-                        <h2>
-                          The Goose &amp; The Golden Egg
-                          <span>GF</span>
-                        </h2>
-                        <h6>
-                          Chicken Congee, Egg, Radish, Fried Shallots, Green
-                          Onions, XO Sauce, Pork Floss, White Pepper, Youtiao
-                        </h6>
-                      </a>
+
+                      {data3.map(item => (
+                        <a href type="button">
+                          <h2>{item.heading}
+                            <span> {item.head}</span>
+                          </h2>
+                          <h6>
+                            {item.desc}
+                          </h6>
+                        </a>
+                      ))}
                     </div>
                     <div className="col-12">
                       <div className="text-center drint-btn">
