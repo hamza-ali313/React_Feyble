@@ -7,6 +7,35 @@ import "./Studio.css";
 import BecomeResi from "../../components/Become_A_Resi/Become_A_Resi";
 
 const Studio = () => {
+
+
+  const data = [
+    {
+      img: std1,
+      heading: "Move",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      btn: "Book Now",
+    },
+    {
+      img: std2,
+      heading: "Capture",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      btn: "Book Now",
+    },
+    {
+      img: std3,
+      heading: "Speak",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      btn: "Book Now",
+    },
+    {
+      img: std4,
+      heading: "Reflect",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      btn: "Book Now",
+    }
+  ]
+
   return (
     <>
       <section className="studio-pg">
@@ -22,94 +51,28 @@ const Studio = () => {
             </div>
             <div className="col-lg-7">
               <div className="row flex-wrap">
-                <div className="col-12 col-sm-6 mb-4">
-                  <div className="spa-card">
-                    <img className="img-fluid" src={std1} alt="" />
-                    <div className="yellow-tap">
-                      <h2>Move</h2>
-                    </div>
-                    <div className="spa-card-hover">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                      </p>
-                      <a
-                        className="btn8"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal2"
-                      >
-                        Book Now
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-sm-6  mb-4 mb-sm-0">
-                  <div className="spa-card">
-                    <img className="img-fluid" src={std2} alt="" />
-                    <div className="yellow-tap">
-                      <h2>Capture</h2>
-                    </div>
-                    <div className="spa-card-hover">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                      </p>
-                      <a
-                        className="btn8"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal2"
-                      >
-                        Book Now
-                      </a>
+                {data.map(item => (
+                  <div className="col-12 col-sm-6 mb-4">
+                    <div className="spa-card">
+                      <img className="img-fluid" src={item.img} alt="" />
+                      <div className="yellow-tap">
+                        <h2>{item.heading}</h2>
+                      </div>
+                      <div className="spa-card-hover">
+                        <p>
+                          {item.desc}
+                        </p>
+                        <a
+                          className="btn8"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal2"
+                        >
+                          {item.btn}
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-12 col-sm-6 mb-4">
-                  <div className="spa-card">
-                    <img className="img-fluid" src={std3} alt="" />
-                    <div className="yellow-tap">
-                      <h2>Speak</h2>
-                    </div>
-                    <div className="spa-card-hover">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                      </p>
-                      <a
-                        className="btn8"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal2"
-                      >
-                        Book Now
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-sm-6  mb-4 mb-sm-0">
-                  <div className="spa-card">
-                    <img className="img-fluid" src={std4} alt="" />
-                    <div className="yellow-tap">
-                      <h2>Reflect</h2>
-                    </div>
-                    <div className="spa-card-hover">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                      </p>
-                      <a
-                        className="btn8"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal2"
-                      >
-                        Book Now
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
