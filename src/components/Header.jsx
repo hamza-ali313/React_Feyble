@@ -31,7 +31,7 @@ function BasicExample() {
                 <Link to="member">Members</Link>
               </Dropdown.Item>
               <Dropdown.Item className="p-0">
-                <Link to="merch">Merch</Link>
+                <Link to="merchandise">Merch</Link>
               </Dropdown.Item>
               <Dropdown.Item className="p-0">
                 <Link to="host_event">Host Event</Link>

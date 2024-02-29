@@ -15,6 +15,7 @@ import Merch from "./pages/Merchandise/Merchandise.jsx";
 import HostEvent from "./pages/HostEvent/HostEvent.jsx";
 import SiteMap from "./pages/SiteMap/SiteMap.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
+import Merchandise from "./pages/Merchandise/Merchandise.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -42,6 +43,7 @@ function App() {
         <Route path="host_event" element={<HostEvent />} />
         <Route path="site_map" element={<SiteMap />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="merchandise" element={<Merchandise />} />
       </Routes>
       <Footer />
     </>
