@@ -1,14 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { FaUser } from "react-icons/fa6";
 
 import landinglogo from "../../assets/Images/landing-logo.png";
 import { Link } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
+import Todos from "./Todos.jsx";
 // import landinglogo from '../../assets/Images/landing-logo.png'
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import "./home.css";
+
 function Home() {
-  // did update
+  const [count,setCount] = useState(0);
+  const [todos,setTodos] = useState([]);
+
+
+  const addTodo = useCallback(()=>{
+    setTodos((prev)=>[...prev, "newtodo"]);
+},[todos])
 
 
   return (
@@ -25,7 +33,6 @@ function Home() {
                   <Dropdown.Toggle id="dropdown-basic">
                     <CiMenuFries />
                   </Dropdown.Toggle>
-
                   <Dropdown.Menu>
                     <Dropdown.Item className="p-0">
                       <Link to="about">About Us</Link>
@@ -74,6 +81,9 @@ function Home() {
                   </a>
                 </div>
               </div>
+              <Todos todos={todos} addtodo={addTodo}/>
+              <p>{count}</p>
+              <button onClick={() => setCount(prevCount => prevCount + 1)}>+</button>
             </Col>
           </Row>
         </Container>
