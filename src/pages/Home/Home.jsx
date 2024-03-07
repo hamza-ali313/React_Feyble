@@ -10,13 +10,6 @@ import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import "./home.css";
 
 function Home() {
-  const [count,setCount] = useState(0);
-  const [todos,setTodos] = useState([]);
-
-
-  const addTodo = useCallback(()=>{
-    setTodos((prev)=>[...prev, "newtodo"]);
-},[todos])
 
 
   return (
@@ -81,9 +74,6 @@ function Home() {
                   </a>
                 </div>
               </div>
-              <Todos todos={todos} addtodo={addTodo}/>
-              <p>{count}</p>
-              <button onClick={() => setCount(prevCount => prevCount + 1)}>+</button>
             </Col>
           </Row>
         </Container>
