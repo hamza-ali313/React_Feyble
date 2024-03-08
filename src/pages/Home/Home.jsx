@@ -4,7 +4,6 @@ import { FaUser } from "react-icons/fa6";
 import landinglogo from "../../assets/Images/landing-logo.png";
 import { Link } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
-import Todos from "./Todos.jsx";
 // import landinglogo from '../../assets/Images/landing-logo.png'
 import { Container, Row, Col, Dropdown } from "react-bootstrap";
 import "./home.css";
