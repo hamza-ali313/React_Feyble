@@ -21,20 +21,37 @@ const cafeSlice = createSlice({
       loading: false,
       error: null,
     },
-    reducers: {
-      fetchDataStart(state) {
-        state.loading = true;
-        state.error = null;
-      },
-      fetchDataSuccess(state, action) {
-        state.loading = false;
-        state.data = action.payload;
-      },
-      fetchDataFailure(state, action) {
-        state.loading = false;
-        state.error = action.payload;
-      },
-    },
+    // extraReducers: {
+    //   fetchDataStart(state) {
+    //     state.loading = true;
+    //     state.error = null;
+    //   },
+    //   fetchDataSuccess(state, action) {
+    //     state.loading = false;
+    //     state.data = action.payload;
+    //   },
+    //   fetchDataFailure(state, action) {
+    //     state.loading = false;
+    //     state.error = action.payload;
+    //   },
+    // },
+    extraReducers: (builder) => {
+      builder
+        .addCase(fetchData.pending, (state, action) => {
+          // Define how to handle someOtherAction
+          state.loading = true
+        })
+        .addCase(fetchData.fulfilled, (state, action) => {
+          // Define how to handle anotherAction
+        console.log('dataaaaaa', action.payload)
+          state.data = action.payload;
+          state.loading = false
+        });
+        builder.addCase(fetchData.rejected, (state, action) => {
+          state.error = 'Some problem occured',
+          state.loading = false
+        })
+    }
 });
 
 export const { fetchDataStart, fetchDataSuccess, fetchDataFailure } = cafeSlice.actions; 

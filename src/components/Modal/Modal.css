@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;800;900;1000&display=swap');
+
+.more-imgs ul {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 25px 0px 0 16px;
+}
+.more-imgs ul li img {
+    width: 100%;
+    height: 224px;
+    object-fit: contain;
+}
+.modal-img img {
+    width: 100%;
+    height: 398px;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+.modal-desc .btn5 {
+    display: inline-block;
+    margin: 8px 0 0 0;
+    transition: .5s;
+}
+.equip ul {
+    column-count: 2;
+}
+li.ratings .fa-star {
+    color: #FF754C;
+}
+
+.modal-desc ul.ratings-sec {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    padding: 5px 0 14px 0;
+}
+
+.modal-desc h1 {
+    color: #202a32 !important;
+    font-family: 'Cairo';
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+ul.modal-price h2 {
+    font-size: 18px !important;
+    font-family: 'Cairo';
+    color: #636363 !important;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+ul.modal-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 11px 0 0 0;
+    border-bottom: 2px dashed #ccc;
+    margin: 0px 0 0 0;
+}
+ul.modal-price h3 {
+    background: #FF754C;
+    color: #fff;
+    font-size: 15px;
+    padding: 4px 15px;
+    border-radius: 17px;
+    font-family: 'Open Sans';
+}
